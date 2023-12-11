@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(65, 105, 225, 0.2);
+    font-family: monospace;
+    font-style: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-col {
+    width: 20%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;    
+}
+nav ul li{
+    list-style-type: none;
+    padding: 10px 30px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 4px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.main-col {
+    width: 80%;
+}
+
+.heading-bar {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    background-color: #fff;
+}
+img{
+    width: 98%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 4px;
+}
+.par-one, .par-two{
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    height: auto;
+    min-height: 30vh;
+    width: 48%;
+}
+.par-one ul, .par-two ul{
+    margin: 10px;
+}
+.row-two{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form{
+    background-color: #fff;
+    min-height: 40vh;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.form-heading{
+    padding: 10px;
+}
+.form-heading h4,h2{
+    margin: 10px;
+}
+.form-group{
+    margin: 10px;
+}
+input{
+    padding: 5px;
+    width: 300px;
+}
+textarea{
+    height: 80px;
+    width: 300px;
+}
+button{
+    background-color: #4169E1;
+    border: none;
+    border-radius: 4px;
+    width: 110px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+footer {
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+    margin: 5px;
+    background-color: #fff;
+}
+
+/* breakpoints */
+@media only screen and (max-width: 768px) {
+    .row{
+        flex-direction: column;
+    }
+    .nav-col{
+        width: 100%;
+        min-height: 0;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li{
+        padding: 5px;
+    }
+    .main-col{
+        width: 100%;
+    }
+    .par-one,.par-two{
+        width: 100%;
+    }
+}
